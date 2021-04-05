@@ -21,7 +21,7 @@ search.addEventListener('submit', async function(e){
   
   
   const config={params: {q: searchTerm} }
-  const res= await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${searchTerm}&units=metric&appid=e224f617ed9eb568178e930cf1cce70b`);
+  const res= await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${searchTerm}&units=metric&appid=e224f617ed9eb568178e930cf1cce70b`);
    //console.log(res.data.main.temp);
   const newli=document.createElement('li');
   const newCity=document.createTextNode(res.data.name);
