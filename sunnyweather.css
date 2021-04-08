@@ -1,0 +1,204 @@
+/* button{
+    margin: 0;
+    position: relative;
+    top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+} */
+
+:root {
+    --bg_main: #0a1f44;
+    --text_light: #fff;
+    --text_med: #53627c;
+    --text_dark: #1e2432;
+    --red: #ff1e42;
+    --darkred: #c3112d;
+    --orange: #ff8c00;
+  }
+  body{
+    background-image: url("https://images.unsplash.com/photo-1606170034961-ee40e2dbe6bf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+  }
+  .btn{
+    margin-left: 0.2em;
+    
+  }
+  
+  .navbar.scrolled{
+    background-color: inherit;
+    /* opacity: 0.5; */
+    
+  
+   }
+   .navbar.transparent{
+     background: rgba(0, 0, 0, .1);
+   }
+   /* .navbar-item{
+     opacity: 1; 
+   } */
+   ul {
+    list-style: none;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+  }
+  .card{
+      /* border: 1rem solid blue ; */
+      border: rgba(170, 50, 220, .1);
+        margin: 5rem auto auto auto;
+        padding-bottom:auto;
+        /* opacity: .6; */
+        background-color: inherit;
+        /* background: #000 url("https://images.unsplash.com/photo-1606170034961-ee40e2dbe6bf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80") center center; */
+
+      
+  }
+  .ajax-section {
+    margin: 75px 0 20px;
+    padding-bottom:50px;
+  }
+  
+  .ajax-section .cities {
+    display: grid;
+    grid-gap: 32px 20px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .ajax-section .city {
+    position: relative;
+    padding: 40px 10%;
+    border-radius: 20px;
+    background-color: cyan;
+    color: var(--text_med);
+  }
+  
+  .ajax-section .city::after {
+    content: '';
+    width: 90%;
+    height: 50px;
+    position: absolute;
+    bottom: -12px;
+    left: 5%;
+    z-index: -1;
+    opacity: 0.3;
+    border-radius: 20px;
+    background: var(--text_light);
+  }
+  
+  .ajax-section figcaption {
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  .ajax-section .city-temp {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: var(--text_dark);
+  }
+  
+  .ajax-section .city sup {
+    font-size: 0.5em;
+  }
+  
+  .ajax-section .city-name sup {
+    padding: 0.2em 0.6em;
+    border-radius: 30px;
+    color: var(--text_light);
+    background: var(--orange);
+  }
+  
+  .ajax-section .city-icon {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+  }
+  @media screen and (max-width: 1000px) {
+    body {
+      padding: 30px;
+    }
+    
+    .ajax-section .cities {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .heading,
+    .ajax-section .city-temp {
+      font-size: 3rem;
+    }
+    
+    .ajax-section {
+      margin-top: 20px;
+    }
+    
+    .top-banner form {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .top-banner form input,
+    .top-banner form button {
+      width: 100%;
+    }
+  
+    .top-banner form button {
+      margin: 20px 0 0 0;
+    }
+    
+    .top-banner form .msg {
+      position: static;
+      max-width: none;
+      min-height: 0;
+      margin-top: 10px;
+    }
+  
+    .ajax-section .cities {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    body {
+      padding: 15px;
+    }
+    
+    .ajax-section .cities {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  .mb-0{
+    margin-right: 15px;
+  }
+  
+  /* API Key banner
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .api {
+    background: #fffbbc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px
+  }
+  
+  .api a {
+    text-decoration: underline;
+  }
+  
+  .api a:hover {
+    text-decoration: none;
+  }

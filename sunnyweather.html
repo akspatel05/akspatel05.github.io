@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sunny Weather</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="sunnyweather.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		
+	<script src="https://kit.fontawesome.com/a663392bbe.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<nav id="main" class="navbar fixed-top navbar-expand-md navbar-dark transparent py-0 " >
+		<div class="container-fluid">
+
+  <a class="navbar-brand" href="#">SUNNYWEATHER.COM</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">ABOUT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">YOUR CITIES</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+
+<section class="container ">
+    <div class="row align-items-center">
+        <div class="card text-white  col-md-6 offset-md-3 col-" style="max-width: 36rem;">
+           
+            <div class="card-body">
+              <h5 class="card-title">Search a city!</h5>
+              <form  id="searchform" >
+             <div class="form-group ">
+                    
+                    <div class="input-group">
+                      
+                      <input type="text" class="form-control input" id="exampleInputAmount" placeholder="Enter a City">
+                      <button type="submit" class="btn btn-info"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg></button>
+                    </div>
+                    
+                  </div>
+                  
+              
+            </form>
+            </div>
+          </div>
+    </div>
+</section>
+<section class="container-fluid px-0">
+	<section class="section ajax-section has-navbar-fixed-top">
+        <div class="container">
+          <ul class="cities" ></ul>
+        </div>
+      
+      </section>
+    
+      
+      <blockquote class="blockquote text-right">
+        <p class="mb-0">Made by: <strong>Aks Patel</strong></p>
+        <!-- <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer> -->
+      </blockquote>
+    
+
+    </section>
+    <script src="sunnyweather.js"></script>
+    
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	$(function () {
+       $(document).scroll(function (){
+       	var $nav= $("#main");
+       	$nav.toggleClass("scrolled",$(this).scrollTop() > $nav.height());
+       });
+	});
+
+</script>
+</body>
+</html>
