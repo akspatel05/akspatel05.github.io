@@ -78,7 +78,7 @@
     position: relative;
     padding: 40px 10%;
     border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: cyan;
     color: var(--text_med);
   }
   
